@@ -11,15 +11,15 @@ import {persistor, store} from './store';
 // enableScreens();
 
 export default class Root extends React.Component {
-  public render() {
-    return (
-      <Provider store={store}>
-        <PersistGate loading={<View />} persistor={persistor}>
-          <NavigationContainer ref={navigationRef}>
-            <App />
-          </NavigationContainer>
-        </PersistGate>
-      </Provider>
-    );
-  }
+    public render() {
+        return (
+            <Provider store={store}>
+                <PersistGate loading={<View/>} persistor={persistor}>
+                    <NavigationContainer ref={navigationRef}>
+                        <App/>
+                    </NavigationContainer>
+                </PersistGate>
+            </Provider>
+        );
+    }
 }

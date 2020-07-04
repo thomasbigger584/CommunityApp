@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark">#FF047EAC</color>
+    <color name="status_bar_color">#FF047EAC</color>
+
+    <color name="colorPrimaryLight">#FF4EBFEF</color>
+    <color name="colorPrimary">#FF1BAAE4</color>
+    <color name="colorPrimaryDark">#FF047EAC</color>
+    <color name="colorAccent">#FF1A2866</color>
+
+</resources>

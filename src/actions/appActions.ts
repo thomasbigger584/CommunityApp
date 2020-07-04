@@ -9,4 +9,4 @@ import * as types from './actionTypes';
  * @param state params of the app reducer
  */
 export const setStoreState = (state?: Partial<AppReducerState>) =>
-  action(types.APP.SET_STORE_STATE, state);
+    action(types.APP.SET_STORE_STATE, state);
