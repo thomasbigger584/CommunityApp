@@ -4,7 +4,7 @@ import {RootStackParamList} from '../App';
 import SplashScreen from 'react-native-splash-screen'
 import {StackNavigationProp} from "@react-navigation/stack";
 import AppLinearGradientBackground from "../components/AppLinearGradientBackground";
-import {AppButton} from "../components/AppButton";
+import {RippledAppButton} from "../components/RippledAppButton";
 
 interface LoginRegisterScreenProps {
     navigation: StackNavigationProp<RootStackParamList, 'LoginRegister'>;
@@ -18,10 +18,10 @@ export class LoginRegisterScreen extends Component<LoginRegisterScreenProps> {
         return (
             <AppLinearGradientBackground>
                 <View style={styles.container}>
-                    <AppButton title="Login" onPress={() => {
+                    <RippledAppButton title="Login" onPress={() => {
                         this.props.navigation.navigate('Login', {})
                     }}/>
-                    <AppButton title="Register" onPress={() => {
+                    <RippledAppButton title="Register" onPress={() => {
                         this.props.navigation.navigate('Register', {})
                     }}/>
                 </View>
