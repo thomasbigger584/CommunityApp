@@ -23,7 +23,7 @@ export const toolbarHeaderStyle = {
 }
 
 export const headerBackButtonOnly = {
-    title: undefined,
+    title: '',
     headerBackTitleVisible: false
 };
 

@@ -24,7 +24,7 @@ const App = () => {
             <Stack.Screen
                 name="LoginRegister"
                 component={LoginRegisterScreen}
-                options={{title: "Login / Register"}}
+                options={{title: "Login / Register", headerShown: false }}
                 initialParams={{}}
             />
             <Stack.Screen
