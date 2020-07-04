@@ -11,7 +11,10 @@ interface AppButtonProps {
 export class RippledAppButton extends Component<AppButtonProps> {
     render() {
         return (
-            <Ripple style={styles.appButtonContainer} rippleColor={Colors.colorWhite} rippleSize={550}>
+            <Ripple style={styles.appButtonContainer}
+                    onPress={this.props.onPress}
+                    rippleColor={Colors.colorWhite}
+                    rippleSize={550}>
                 <Text style={styles.appButtonText}>{this.props.title}</Text>
             </Ripple>
         );

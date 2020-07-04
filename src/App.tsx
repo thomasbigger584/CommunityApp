@@ -13,7 +13,7 @@ export type AppTabParamList = {
 export type RootStackParamList = {
     LoginRegister: {},
     Login: {}
-    Register: {}
+    Register: {},
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -30,7 +30,7 @@ const App = () => {
             <Stack.Screen
                 name="Login"
                 component={LoginScreen}
-                options={{...headerBackButtonOnly, cardShadowEnabled: false}}
+                options={{...headerBackButtonOnly,}}
                 initialParams={{}}
             />
             <Stack.Screen

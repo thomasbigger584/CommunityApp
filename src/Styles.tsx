@@ -24,6 +24,11 @@ export const toolbarHeaderStyle = {
 
 export const headerBackButtonOnly = {
     title: '',
-    headerBackTitleVisible: false
+    headerBackTitleVisible: false,
+    headerStyle: {
+        elevation: 0,
+        shadowOpacity: 0,
+        backgroundColor: Colors.colorPrimary
+    }
 };
 
