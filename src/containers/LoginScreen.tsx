@@ -32,7 +32,7 @@ export class LoginScreen extends Component<LoginScreenProps> {
                                     />
                                     <TextInput
                                         placeholder="Email"
-                                        placeholderTextColor="rgba(255,255,255,1)"
+                                        placeholderTextColor="rgba(255,255,255,0.4)"
                                         secureTextEntry={false}
                                         style={styles.emailInput}
                                     />
@@ -41,8 +41,8 @@ export class LoginScreen extends Component<LoginScreenProps> {
                                     <EvilIconsIcon name="lock" style={styles.icon2}/>
                                     <TextInput
                                         placeholder="Password"
-                                        placeholderTextColor="rgba(255,255,255,1)"
-                                        secureTextEntry={false}
+                                        placeholderTextColor="rgba(255,255,255,0.4)"
+                                        secureTextEntry={true}
                                         style={styles.passwordInput}
                                     />
                                 </View>

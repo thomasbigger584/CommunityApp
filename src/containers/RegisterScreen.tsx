@@ -29,7 +29,7 @@ export class RegisterScreen extends Component<RegisterScreenProps> {
                                         />
                                         <TextInput
                                             placeholder="Name"
-                                            placeholderTextColor="rgba(255,255,255,1)"
+                                            placeholderTextColor="rgba(255,255,255,0.4)"
                                             secureTextEntry={false}
                                             style={styles.nameInput}
                                         />
@@ -41,7 +41,7 @@ export class RegisterScreen extends Component<RegisterScreenProps> {
                                         />
                                         <TextInput
                                             placeholder="Email"
-                                            placeholderTextColor="rgba(255,255,255,1)"
+                                            placeholderTextColor="rgba(255,255,255,0.4)"
                                             secureTextEntry={false}
                                             style={styles.emailInput}
                                         />
@@ -52,7 +52,7 @@ export class RegisterScreen extends Component<RegisterScreenProps> {
                                     <EvilIconsIcon name="lock" style={styles.icon7}/>
                                     <TextInput
                                         placeholder="Password"
-                                        placeholderTextColor="rgba(255,255,255,1)"
+                                        placeholderTextColor="rgba(255,255,255,0.4)"
                                         secureTextEntry={true}
                                         style={styles.passwordInput}
                                     />

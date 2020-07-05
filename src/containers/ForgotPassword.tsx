@@ -29,7 +29,7 @@ export class ForgotPasswordScreen extends Component<ForgotPasswordScreenProps> {
                                 <Icon name="envelope" style={styles.icon22}/>
                                 <TextInput
                                     placeholder="Email"
-                                    placeholderTextColor="rgba(255,255,255,1)"
+                                    placeholderTextColor="rgba(255,255,255,0.4)"
                                     secureTextEntry={false}
                                     keyboardType="email-address"
                                     style={styles.emailInput}
