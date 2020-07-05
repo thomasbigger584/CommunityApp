@@ -20,6 +20,7 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 const App = () => {
     return (
+        // @ts-ignore
         <Stack.Navigator screenOptions={toolbarHeaderStyle}>
             <Stack.Screen
                 name="Login"

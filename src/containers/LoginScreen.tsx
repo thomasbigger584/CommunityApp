@@ -4,20 +4,34 @@ import React, {Component} from "react";
 import {ImageBackground, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
 import EvilIconsIcon from "react-native-vector-icons/EvilIcons";
 import SplashScreen from "react-native-splash-screen";
+import {AppDialog, DialogType} from "../components/AppDialog";
 
 interface LoginScreenProps {
     navigation: StackNavigationProp<RootStackParamList, 'Login'>;
 }
 
+interface LoginScreenState {
+    dialogVisible: boolean;
+    dialogType: DialogType;
+}
+
 export class LoginScreen extends Component<LoginScreenProps> {
+
+    state: LoginScreenState = {
+        dialogVisible: false,
+        dialogType: "info"
+    }
+
     componentDidMount() {
         SplashScreen.hide();
+
+
     }
 
     render() {
         return (
             <View style={styles.root}>
-                <StatusBar barStyle="light-content" backgroundColor="rgba(31,178,204,1)" />
+                <StatusBar barStyle="light-content" backgroundColor="rgba(31,178,204,1)"/>
                 <View style={styles.background}>
                     <ImageBackground
                         style={styles.rect}
@@ -49,7 +63,12 @@ export class LoginScreen extends Component<LoginScreenProps> {
                             </View>
                             <View style={styles.usernameColumnFiller}/>
                             <TouchableOpacity
-                                onPress={() => this.props.navigation.navigate("Register", {})}
+                                onPress={() => {
+                                    this.setState({
+                                        dialogType: "warning",
+                                        dialogVisible: true
+                                    });
+                                }}
                                 style={styles.button}>
                                 <Text style={styles.text2}>Login</Text>
                             </TouchableOpacity>
@@ -71,6 +90,21 @@ export class LoginScreen extends Component<LoginScreenProps> {
                         </View>
                     </ImageBackground>
                 </View>
+
+                <AppDialog
+                    dialogType={this.state.dialogType}
+                    visible={this.state.dialogVisible}
+                    onOkPress={(event => {
+                        this.setState({
+                            dialogVisible: false
+                        });
+                    })}
+                    onCancelPress={(event => {
+                        this.setState({
+                            dialogVisible: false
+                        });
+                    })}
+                />
             </View>
         );
     }
