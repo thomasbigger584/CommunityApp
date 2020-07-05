@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import LoginRegisterScreen from "./containers/LoginRegisterScreen";
 import LoginScreen from "./containers/LoginScreen";
 import RegisterScreen from "./containers/RegisterScreen";
 import {headerBackButtonOnly, toolbarHeaderStyle} from "./Styles";
@@ -11,7 +10,6 @@ export type AppTabParamList = {
 };
 
 export type RootStackParamList = {
-    LoginRegister: {},
     Login: {}
     Register: {},
 };
@@ -22,15 +20,9 @@ const App = () => {
     return (
         <Stack.Navigator screenOptions={toolbarHeaderStyle}>
             <Stack.Screen
-                name="LoginRegister"
-                component={LoginRegisterScreen}
-                options={{title: "Login / Register", headerShown: false, }}
-                initialParams={{}}
-            />
-            <Stack.Screen
                 name="Login"
                 component={LoginScreen}
-                options={{...headerBackButtonOnly,}}
+                options={{headerShown: false,}}
                 initialParams={{}}
             />
             <Stack.Screen
