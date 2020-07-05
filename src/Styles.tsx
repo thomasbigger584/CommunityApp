@@ -15,21 +15,13 @@ export const Colors = {
 
 export const toolbarHeaderStyle = {
     headerStyle: {
-        backgroundColor: Colors.colorPrimary,
+        elevation: 0,
+        shadowOpacity: 0,
+        backgroundColor: Colors.colorPrimary
     },
     headerTintColor: Colors.colorWhite,
+    headerBackTitleVisible: false,
     headerTitleStyle: {
         fontWeight: 'bold',
     }
 }
-
-export const headerBackButtonOnly = {
-    title: '',
-    headerBackTitleVisible: false,
-    headerStyle: {
-        elevation: 0,
-        shadowOpacity: 0,
-        backgroundColor: Colors.colorPrimary
-    }
-};
-

@@ -22,7 +22,7 @@ export class LoginScreen extends Component<LoginScreenProps> {
                     <ImageBackground
                         style={styles.rect}
                         imageStyle={styles.rect_imageStyle}
-                        source={require("../../assets/images/Gradient_eztQVI9.png")}>
+                        source={require("../../assets/images/Gradient_Background.png")}>
                         <View style={styles.form}>
                             <View style={styles.usernameColumn}>
                                 <View style={styles.username}>
@@ -34,7 +34,7 @@ export class LoginScreen extends Component<LoginScreenProps> {
                                         placeholder="Email"
                                         placeholderTextColor="rgba(255,255,255,1)"
                                         secureTextEntry={false}
-                                        style={styles.usernameInput}
+                                        style={styles.emailInput}
                                     />
                                 </View>
                                 <View style={styles.password}>
@@ -62,8 +62,12 @@ export class LoginScreen extends Component<LoginScreenProps> {
                                 <View style={styles.createAccountFiller}/>
                                 <Text style={styles.createAccount}>Create Account</Text>
                             </TouchableOpacity>
-                            <View style={styles.button2Filler}/>
-                            <Text style={styles.needHelp}>Forgot Password?</Text>
+                            <TouchableOpacity
+                                onPress={() => this.props.navigation.navigate("ForgotPassword", {})}
+                                style={{justifyContent: "flex-end", flex: 1}}>
+                                <View style={styles.button2Filler}/>
+                                <Text style={styles.needHelp}>Forgot Password?</Text>
+                            </TouchableOpacity>
                         </View>
                     </ImageBackground>
                 </View>
@@ -104,7 +108,7 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         alignSelf: "center"
     },
-    usernameInput: {
+    emailInput: {
         height: 35,
         color: "rgba(255,255,255,1)",
         flex: 1,
@@ -175,6 +179,5 @@ const styles = StyleSheet.create({
     needHelp: {
         color: "rgba(255,255,255,0.5)",
         alignSelf: "flex-end",
-        marginRight: -1
     }
 });

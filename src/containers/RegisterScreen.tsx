@@ -21,7 +21,7 @@ export class RegisterScreen extends Component<RegisterScreenProps> {
                     <ImageBackground
                         style={styles.rect2}
                         imageStyle={styles.rect2_imageStyle}
-                        source={require("../../assets/images/Gradient_EW5IWEu.png")}
+                        source={require("../../assets/images/Gradient_Background.png")}
                     >
                         <View style={styles.progressBarColumn}>
 
