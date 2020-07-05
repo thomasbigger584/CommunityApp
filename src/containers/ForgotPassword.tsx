@@ -93,7 +93,6 @@ const styles = StyleSheet.create({
         marginTop: 14
     },
     text3Column: {
-        marginTop:40,
         marginLeft: 40,
         marginRight: 40
     },

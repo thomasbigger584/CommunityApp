@@ -9,10 +9,6 @@ interface RegisterScreenProps {
 }
 
 export class RegisterScreen extends Component<RegisterScreenProps> {
-    componentDidMount() {
-
-    }
-
     render() {
         return (
             <View style={styles.root}>
@@ -24,8 +20,6 @@ export class RegisterScreen extends Component<RegisterScreenProps> {
                         source={require("../../assets/images/Gradient_Background.png")}
                     >
                         <View style={styles.progressBarColumn}>
-
-                            <Text style={styles.text3}>CREATE ACCOUNT</Text>
                             <View style={styles.form1}>
                                 <View style={styles.nameColumn}>
                                     <View style={styles.name}>
@@ -227,7 +221,6 @@ const styles = StyleSheet.create({
         marginTop: 14
     },
     progressBarColumn: {
-        marginTop: 58,
         marginLeft: 41,
         marginRight: 41
     },

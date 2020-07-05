@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export const Colors = {
     colorPrimaryLight: '#4ebfef',
-    colorPrimary: '#1baae4',
+    colorPrimary: 'rgba(31,178,204,1)',
     colorPrimaryDark: '#1a2866',
     colorAccent: '#1a2866',
     colorOverlay: '#660000',
@@ -21,7 +21,6 @@ export const toolbarHeaderStyle = {
     },
     headerTintColor: Colors.colorWhite,
     headerBackTitleVisible: false,
-    headerTitleStyle: {
-        fontWeight: 'bold',
-    }
+    headerTitle: '',
+    headerTitleAlign: 'center'
 }

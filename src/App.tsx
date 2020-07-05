@@ -30,13 +30,13 @@ const App = () => {
             <Stack.Screen
                 name="Register"
                 component={RegisterScreen}
-                options={{headerShown: false,}}
+                options={{headerTitle: "Create Account"}}
                 initialParams={{}}
             />
             <Stack.Screen
                 name="ForgotPassword"
                 component={ForgotPasswordScreen}
-                options={{headerShown: false,}}
+                options={{headerTitle: "Forgot Password"}}
                 initialParams={{}}
             />
         </Stack.Navigator>
