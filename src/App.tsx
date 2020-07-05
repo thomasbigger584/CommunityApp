@@ -28,7 +28,7 @@ const App = () => {
             <Stack.Screen
                 name="Register"
                 component={RegisterScreen}
-                options={{...headerBackButtonOnly}}
+                options={{headerShown: false,}}
                 initialParams={{}}
             />
         </Stack.Navigator>
