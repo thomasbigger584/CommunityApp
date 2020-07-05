@@ -9,7 +9,8 @@ export const Colors = {
     colorBackgroundGrey: '#efefef',
     colorContent: '#444444',
     colorSubtitleGrey: '#7f8592',
-    colorWhite: '#ffffff'
+    colorWhite: '#ffffff',
+    colorBlack: '#000000'
 };
 
 export const toolbarHeaderStyle = {
